@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Overlay Background Image Example</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('nature-bg.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  }
+
+  .content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+
+  h1 {
+    color: hsl(55, 90%, 49%);
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 25px;
+    margin: 0;
+    padding: 10px;
+    color: #05ffe6;
+  }
+
+  .cssbuttons-io-button {
+ background: #A370F0;
+ color: white;
+ font-size: 11px;
+font-weight: bold;
+ padding: 0.35em;
+ padding-left: 1.2em;
+ font-size: 17px;
+ font-weight: 500;
+ border-radius: 0.9em;
+ border: none;
+ letter-spacing: 0.05em;
+ display: flex;
+ align-items: center;
+ box-shadow: inset 0 0 1.6em -0.6em #714da6;
+ overflow: hidden;
+ position: relative;
+ height: 2.8em;
+ padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+ background: white;
+ margin-left: 1em;
+ position: absolute;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 2.2em;
+ width: 2.2em;
+ border-radius: 0.7em;
+ box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+ right: 0.3em;
+ transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+ width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+ width: 1.1em;
+ transition: transform 0.3s;
+ color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+ transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+ transform: scale(0.95);
+}
+</style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1>Welcome to Weather Forecast</h1>
+    <p>Have you  thinking to plan any Journey then Wait.....</p>
+    <p> Wait.....</p>
+    <p>First check the Weather Forecast there and then do the Trip Planning</p>
+  </div>
+  <div class="mandar">
+    
+  <button class="cssbuttons-io-button"> Get started
+    <div class="icon">
+        <a href="public/dashboard.html">
+      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+    </a>
+    </div>
+   
+  </button>
+</div>
+</body>
+</html>
